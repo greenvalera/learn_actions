@@ -32,6 +32,7 @@ jobs:
 
       - name: Push image to DigitalOcean Container Registry
         run: docker push $(echo $REGISTRY)/$(echo $IMAGE_NAME):latest
+
   deploy:
     runs-on: ubuntu-latest
     if: github.event_name == 'push'
