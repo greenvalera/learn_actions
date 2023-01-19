@@ -46,4 +46,4 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           script: |
             # Login into Digital Ocean Registry
-            docker login -u ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }} -p ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }} $(echo $REGISTRY
+            docker login -u ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }} -p ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }} $(echo $REGISTRY)
