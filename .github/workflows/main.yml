@@ -56,5 +56,6 @@ jobs:
             docker run -d \
             --restart always \
             --publish 3000:3000 \
+            --pull=always \
             --name $(echo $CONTAINER_NAME) \
             $(echo $REGISTRY)/$(echo $IMAGE_NAME):latest
